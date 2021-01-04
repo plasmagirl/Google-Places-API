@@ -9,7 +9,7 @@ pd.set_option('max_colwidth', 100)
 def extract_address(keyword, API_KEY, coordinates=None, radius = '8047'):
     
     """
-    Returns a dataframe containing information about a set of places based on the keyword
+    Returns a dataframe containing information about a set of places based on the keyword parameter.
 
     Parameters
     ----------
@@ -22,11 +22,11 @@ def extract_address(keyword, API_KEY, coordinates=None, radius = '8047'):
     
     coordinates: str (optional)
         latitude and longitude seperated by a comma, e.g, '39.8000659,-86.302886'
-        results based on your location when coordinates not specified
+        results will be based on your present location when coordinates not specified
     
     radius: str (optional)
-        search restricted to 5 miles/8000 meters.
-        Maximum allowed radius is 50,000 meters by googleapi.
+        search restricted to 5 miles (8047 meters). Value can be increased or decreased based on preference.
+        Maximum allowed radius is 50,000 meters by google api.
         
     Returns
     -------
